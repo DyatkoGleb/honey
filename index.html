@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/dc6f15c0d7.js"></script>
+    <title>HoneyHunters</title>
+</head>
+
+<body>
+    <main>
+        <div class="block-add-comment">
+            <div class="container pt-4">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+
+                <div class="row mt-5 mb-3">
+                    <div class="offset-4 col-4 offset-lg-4 col-lg-3">
+                        <img class="w-100" src="img/envelope.png" alt="">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-lg-5">
+                        <div>
+                            <div class="light-text my-2">Имя <span class="text-danger">*</span></div>
+                            <input class="w-100 px-3 py-2 light-text" type="text" name="" id="input-name">
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <div class="light-text my-2">E-Mail <span class="text-danger">*</span></div>
+                            <input class="w-100 px-3 py-2 light-text" type="text" name="" id="input-email">
+                        </div>
+                    </div>
+
+                    <div class="col-12 offset-lg-1 col-lg-6">
+                        <div class="light-text my-2">Комментарий <span class="text-danger">*</span></div>
+                        <textarea class="w-100 px-3 py-2 h-75 light-text" type="text" name="" id="input-text"></textarea>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end">
+                    <input class="btn-add-comment my-5 px-3 py-2 text-white" id="btn-add-comment" type="button" value="Записать">
+                </div>
+            </div>
+        </div>
+        
+        <section>
+            <h4 class="text-center my-5">Выводим комментарии</h4>
+
+            <div class="container">
+                <div class="row" id="block-comments"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pt-3 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-lg-3">
+                    <div class="footer-logo">
+                        <img class="w-100" src="img/logo.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-1 offset-1 offset-lg-7">
+                    <a href="https://vk.com" class="vk pb-1 text-center">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="col-1 offset-1 offset-lg-0">
+                    <a href="https://www.facebook.com/" class="fb pb-1 text-center">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="error-box hide form btn-form position-absolute d-none py-2 px-3" id="error-box" onclick="error('', this)"></div>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

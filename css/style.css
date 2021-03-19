@@ -1,0 +1,116 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    outline: none;
+    font-size: 30px;
+}
+
+input, textarea {
+    background: none;
+    border-radius: 5px;
+    border: 1px solid #4c4f53;
+    resize: none !important;
+}
+input[type=text]:focus, textarea:focus {
+    background-color: #2f3136;
+    border: 1px solid #743538;
+}
+
+.light-text {
+    color: #d7d7d7;
+}
+
+
+
+
+main {
+    min-height: calc(100vh - 127px);
+}
+.block-add-comment {
+    background-color: #2d3136;
+}
+.btn-add-comment {
+    background-color: #be393b;
+    border: none;
+}
+.btn-add-comment:hover {
+    background-color: #a1282a;
+}
+
+
+
+
+.card-comment {
+    font-size: 40px !important;
+}
+.card-comment-blue .card-head {
+    background-color: #4b596c;
+}
+.card-comment-blue .card-body {
+    background-color: #e9eef3;
+    color: #6d737b;
+}
+.card-comment-blue .email {
+    font-weight: 700;
+    color: #6d737b;
+}
+.card-comment-blue .text-comment {
+    color: #767582;
+}
+
+.card-comment-green .card-head {
+    background-color: #58ad52;
+}
+.card-comment-green .card-body {
+    background-color: #deebde;
+    color: #58ad52;
+}
+.card-comment-green .email {
+    font-weight: 700;
+    color: #58ad52;
+}
+.card-comment-green .text-comment {
+    color: #768275;
+}
+
+
+
+
+footer {
+    background-color: #2a2d33;
+}
+.vk, .fb {
+    height: max-content;
+    background-color: #2f3338;
+    border: 3px solid #454648;
+    border-radius: 100%;
+}
+.vk i, .fb i {
+    width: 46px;
+    font-size: 25px;
+    color: #656566;
+}
+.vk:hover, .fb:hover {
+    border: 3px solid #777;
+}
+.vk:hover i, .fb:hover i {
+    color: #aaa;
+}
+
+
+
+
+.error-box {
+    left: 20px;
+    bottom: 20px;
+    width: max-content;
+    background-color: #fff;
+    border-radius: 20px;
+    color: red !important;
+    transition: .25s;
+    z-index: 999;
+    cursor: pointer;
+}
